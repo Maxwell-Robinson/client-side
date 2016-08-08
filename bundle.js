@@ -82,5 +82,5 @@ function trim(r){return r.replace(/^\s*|\s*$/g,"")}exports=module.exports=trim,e
 function extend(){for(var r={},e=0;e<arguments.length;e++){var t=arguments[e];for(var n in t)hasOwnProperty.call(t,n)&&(r[n]=t[n])}return r}module.exports=extend;var hasOwnProperty=Object.prototype.hasOwnProperty;
 
 },{}],29:[function(require,module,exports){
-var HandlebarsCompiler=require("hbsfy/runtime");module.exports=HandlebarsCompiler.template({compiler:[7,">= 4.0.0"],main:function(e,a,n,l,r){var i;return"<h1>Hello "+e.escapeExpression((i=null!=(i=n.name||(null!=a?a.name:a))?i:n.helperMissing,"function"==typeof i?i.call(null!=a?a:{},{name:"name",hash:{},data:r}):i))+"!</h1>\n"},useData:!0});
+var HandlebarsCompiler=require("hbsfy/runtime");module.exports=HandlebarsCompiler.template({compiler:[7,">= 4.0.0"],main:function(e,a,l,n,r){var m,u,i=e.escapeExpression;return"<h1>Hello "+i((u=null!=(u=l.name||(null!=a?a.name:a))?u:l.helperMissing,"function"==typeof u?u.call(null!=a?a:{},{name:"name",hash:{},data:r}):u))+"!</h1>\n\n<p>"+i(e.lambda(null!=(m=null!=a?a.data:a)?m.body:m,a))+"</p>\n"},useData:!0});
 },{"hbsfy/runtime":23}]},{},[1]);
